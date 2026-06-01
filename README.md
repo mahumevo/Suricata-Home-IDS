@@ -25,3 +25,16 @@
   * Bound the network analysis engine to the active interface: `enp0s3`.
 * **Security Rules:** Downloaded and integrated the official Emerging Threats signature database using `suricata-update`.
 * **Validation:** Configuration syntax test successfully passed and verified (`suricata -T`).# Projet Suricata Home IDS
+## 🧪 Phase 3 : Simulation d'attaques et Analyse des Logs / Attack Simulation & Log Analysis
+
+### Version Française :
+* **Simulation :** Utilisation de l'outil `curl` pour déclencher une alerte de test standardisée via l'adresse `http://testmyids.com`.
+* **Analyse du fichier de log (`fast.log`) :** Interception réussie du trafic par Suricata et génération immédiate de l'alerte de sécurité.
+* **Résultat obtenu :**
+  `[GPL ATTACK_RESPONSE id check returned root]` -> Preuve que l'IDS détecte efficacement les signatures de comportements suspects sur le réseau local.
+
+### English Version:
+* **Simulation:** Used the `curl` tool to trigger a standardized test alert via `http://testmyids.com`.
+* **Log Analysis (`fast.log`):** Traffic was successfully intercepted by Suricata, instantly generating a security alert.
+* **Triggered Alert:**
+  `[GPL ATTACK_RESPONSE id check returned root]` -> Proof that the IDS is effectively detecting suspicious behavior signatures on the local network.

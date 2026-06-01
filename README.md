@@ -38,3 +38,14 @@
 * **Log Analysis (`fast.log`):** Traffic was successfully intercepted by Suricata, instantly generating a security alert.
 * **Triggered Alert:**
   `[GPL ATTACK_RESPONSE id check returned root]` -> Proof that the IDS is effectively detecting suspicious behavior signatures on the local network.
+## 📊 Phase 4 : Maintenance & Exploitation des Logs / Maintenance & Log Exploitation
+
+### Version Française :
+* **Gestion de l'espace disque :** Configuration de `logrotate` pour compresser et archiver quotidiennement les logs de Suricata afin d'éviter la saturation de la VM.
+* **Analyse de données (Parsing JSON) :** Utilisation de l'outil `jq` pour filtrer et extraire les alertes critiques du fichier `eve.json`.
+* **Résultat :** Le Lab est autonome, industrialisé, et prêt pour l'intégration future dans un SIEM (comme ELK ou Splunk).
+
+### English Version:
+* **Storage Management:** Configured `logrotate` to automatically compress and rotate Suricata logs daily, preventing VM disk saturation.
+* **Data Parsing (JSON):** Utilized `jq` to query, filter, and extract critical security alerts from the comprehensive `eve.json` file.
+* **Result:** The Home IDS Lab is now sustainable, production-ready, and optimized for future SIEM integration (such as ELK or Splunk).
